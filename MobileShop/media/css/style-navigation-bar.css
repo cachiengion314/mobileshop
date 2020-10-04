@@ -1,0 +1,88 @@
+/* navigation bar section */
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(255, 217, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    width: 150px;
+    transition: background-color .5s;
+}
+
+.subnav .subnavbtn:hover {
+    background-color: rgb(255, 217, 0);
+    color: black;
+}
+
+
+/* search section  */
+
+.navbar .search_container {
+    float: right;
+}
+
+.search_container {
+    display: flex;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    margin: 8px 0px 0px 0px;
+}
+
+.navbar input[type=text]:focus {
+    background: white;
+}
+
+.navbar .search_container button {
+    outline: none;
+    padding: 6px 10px;
+    margin: 8px 16px 0px 0px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+.navbar .search_container button img {
+    width: 100%;
+    display: block;
+}
+
+.navbar .search_container button:hover {
+    background: #aaa;
+}
+
+@media screen and (max-width: 970px) {
+    .navbar .search_container {
+        float: none;
+        display: block;
+    }
+    .navbar .search_container button {
+        display: none;
+    }
+    .navbar .search_container input[type="text"] {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+    }
+}

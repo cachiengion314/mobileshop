@@ -1,0 +1,182 @@
+/* sign option plus */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for all buttons */
+
+#signed_name {
+    color: yellow;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#sign_in_btn {
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px !important;
+    transition: background-color .5s;
+}
+
+#sign_up_btn {
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px !important;
+    transition: background-color .5s;
+}
+
+#sign_out_btn {
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 10px 17px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px !important;
+    transition: background-color .5s;
+}
+
+#history_btn {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 10px 17px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px !important;
+    transition: background-color .5s;
+}
+
+#sign_in_btn:hover,
+#sign_up_btn:hover,
+#sign_out_btn:hover,
+#history_btn:hover {
+    background-color: rgb(255, 230, 0);
+    color: black;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 14px 20px;
+    margin: 1px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+}
+
+
+/* The Modal (background) */
+
+.cancel_button,
+.sign_button {
+    float: left;
+    width: 50%;
+    transition: background-color .5s;
+}
+
+.sign_button {
+    background-color: yellowgreen;
+}
+
+.cancel_button {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.sign_button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.cancel_button:hover {
+    background-color: black;
+}
+
+.container {
+    padding: 16px;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #242529e0;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 45%;
+    border-radius: 15px;
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    .cancel_button,
+    .sign_button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(238, 238, 238);
+}
+
+.top {
+    background: #000000;
+    height: 40px;
+    width: 100%;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+/* there are all the contents of the top and are not the product phone list  */
+
+.content_head {
+    padding-right: 1%;
+}
+
+.content_title {
+    display: flex;
+    background: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+}
+
+.content_title h2 {
+    color: rgb(255, 217, 0);
+    display: block;
+    width: 85%;
+    margin: 17px 0px 10px 20px;
+    cursor: pointer;
+}
+
+#content_title_bag {
+    width: 60px;
+    height: 60px;
+}
+
+#content_title_bag img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: filter .5s;
+}
+
+#content_title_bag .all_red_dot {
+    position: relative;
+    width: 21px;
+    height: 21px;
+    display: block;
+    left: 35px;
+    top: -19px;
+    background-color: red;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 21px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 21px;
+    color: white;
+    font-size: 15px;
+}
+
+#content_title_bag img:hover {
+    filter: hue-rotate(180deg);
+}
+
+
+/* header banner plus */
+
+.header_banner {
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    background: white;
+    position: relative;
+}
+
+.header_banner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 420px;
+}
+
+.header_banner .indicate_dot {
+    display: block;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    background: black;
+    border-radius: 100%;
+    opacity: .3;
+    position: absolute;
+    top: 92%;
+    transition: background-color .5s;
+}
+
+.turquoise {
+    background-color: turquoise !important;
+    opacity: 1 !important;
+}
+
+.header_banner .indicate_dot:hover,
+.header_banner .indicate_dot:active {
+    background-color: turquoise;
+}
+
+.header_banner #indicate_dot_0 {
+    left: 48%;
+}
+
+.header_banner #indicate_dot_1 {
+    left: 51%;
+}
+
+.header_banner #indicate_dot_2 {
+    left: 54%;
+}
+
+@media screen and (max-width: 700px) {
+    .header_banner .indicate_dot {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.header_banner .direction {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transition: font-size .5s;
+}
+
+.header_banner .direction:hover {
+    font-size: 40px;
+}
+
+.header_banner .direction:active {
+    color: tomato;
+}
+
+.header_banner #left_direction {
+    left: 0%;
+}
+
+.header_banner #right_direction {
+    right: 0%;
+}
+
+
+/* scroll to top button section  */
+
+#to_the_top_button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 18px;
+    padding: 0px 0px;
+    width: 50px;
+    height: 50px;
+    transition: background-color .5s;
+}
+
+#to_the_top_button:hover {
+    background-color: black;
+}
+
+
+/* animation section  */
+
+.animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}

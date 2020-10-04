@@ -1,0 +1,394 @@
+/* add to cart success section  */
+
+.modal_add_success {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c4;
+    padding-top: 30px;
+}
+
+.modal_add_success .container {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.959);
+    margin: 5% auto 15% auto;
+    border-radius: 15px;
+    padding: 16px;
+    position: relative;
+}
+
+.modal_add_success .container img {
+    width: 170px;
+    height: 170px;
+    margin: 0% 27% auto;
+}
+
+.modal_add_success .container h1 {
+    color: rgb(68, 14, 0);
+    text-align: center;
+}
+
+.modal_add_success .container button {
+    position: absolute;
+    top: 85%;
+    left: 38%;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    transition: background-color .5s;
+}
+
+.modal_add_success .container button:hover {
+    background-color: rgb(255, 238, 2);
+    color: black;
+}
+
+.modal_add_success .container button:focus {
+    outline: none;
+}
+
+.modal_add_success .container button:active {
+    outline: none;
+}
+
+
+/* modal cart section plus  */
+
+.space {
+    height: 10px;
+    width: 100%;
+}
+
+.slice_bar {
+    height: 1px;
+    width: 100%;
+    background: black;
+}
+
+.modal_cart {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c4;
+    padding-top: 30px;
+}
+
+.modal_cart .container {
+    width: 700px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 5% auto 15% auto;
+    border-radius: 15px;
+    padding: 16px;
+    position: relative;
+}
+
+.modal_cart .container h3 {
+    color: rgb(68, 14, 0);
+    text-align: center;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+
+.modal_cart_block_catgory {
+    display: flex;
+}
+
+.modal_cart_block_catgory .products {
+    width: 48%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_cart_block_catgory .price {
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_cart_block_catgory .numbers {
+    width: 22%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_cart_block_item {
+    display: flex;
+}
+
+.modal_cart_block_item .item_products {
+    width: 48%;
+    height: 50px;
+    display: flex;
+}
+
+.modal_cart_block_item .item_products img {
+    width: 50px;
+    height: 50px;
+}
+
+.modal_cart_block_item .item_products .product_name {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.modal_cart_block_item .item_price {
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: teal;
+}
+
+.modal_cart_block_item .item_numbers {
+    width: 22%;
+    height: 50px;
+    display: flex;
+    position: relative;
+}
+
+.modal_cart_block_item .item_numbers [type="number"] {
+    width: 50px;
+    height: fit-content;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.modal_cart_block_item .item_numbers button {
+    outline: none;
+    width: 45px;
+    height: 45px;
+    padding: 15px 3px;
+    margin: 0px;
+    border-radius: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 9%;
+    left: 59%;
+    background-color: crimson;
+    transition: background-color .5s;
+}
+
+.modal_cart_block_item .item_numbers button:hover {
+    background-color: black;
+}
+
+.container .bottom_slice_bar {
+    height: 1px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    top: 88%;
+    left: 0%;
+}
+
+.container .sum_price_title {
+    width: 110px;
+    height: 45px;
+    position: absolute;
+    top: 90%;
+    left: 3%;
+    text-align: center;
+    line-height: 45px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container .sum_price {
+    width: 150px;
+    height: 45px;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    text-align: center;
+    line-height: 45px;
+    color: teal;
+}
+
+.container .cart_cancel_button {
+    outline: none;
+    width: 110px;
+    margin: 0px;
+    border-radius: 15px;
+    height: fit-content;
+    position: absolute;
+    top: 90%;
+    right: 36%;
+    background-color: crimson;
+    transition: background-color .5s;
+}
+
+.container .cart_cancel_button:hover {
+    background-color: black;
+}
+
+.container .cart_pay_button {
+    outline: none;
+    width: 210px;
+    margin: 0px;
+    border-radius: 15px;
+    height: fit-content;
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    transition: background-color .5s;
+    transition: color .5s;
+}
+
+.container .cart_pay_button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* modal pay arena plus  */
+
+.modal_pay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+    padding-top: 30px;
+}
+
+.modal_pay .container {
+    width: 700px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 5% auto 15% auto;
+    border-radius: 15px;
+    padding: 16px;
+    position: relative;
+}
+
+.modal_pay .container h3 {
+    color: rgb(68, 14, 0);
+    text-align: center;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+
+.modal_pay_block_catgory {
+    display: flex;
+}
+
+.modal_pay_block_catgory .chosen_products {
+    width: 60%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_pay_block_catgory .pay_price {
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_pay_block_info {
+    display: flex;
+}
+
+.modal_pay_block_info .chosen_products_info {
+    width: 60%;
+    height: fit-content;
+    text-align: center;
+    line-height: 20px;
+}
+
+.modal_pay_block_info .pay_price_info {
+    width: 40%;
+    height: fit-content;
+    text-align: center;
+    line-height: 20px;
+    color: teal;
+}
+
+.pay_form_block {
+    position: absolute;
+    top: 51%;
+    left: 20%;
+    width: 450px;
+}
+
+.pay_form_block .pay_form_address {
+    text-align: center;
+    width: 100%;
+}
+
+.pay_form_block .pay_form_input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px 22px 0px;
+    border: solid 1px gray;
+    background: #ecebeb;
+}
+
+.pay_phone_money_block {
+    display: flex;
+}
+
+.pay_phone_money_block .phone_pair {
+    width: 50%;
+}
+
+.pay_phone_money_block .phone_pair .telephone_title {
+    height: 25px;
+}
+
+.pay_phone_money_block .money_pair {
+    width: 50%;
+}
+
+.pay_phone_money_block .money_pair .money_type_title {
+    height: 25px;
+}
+
+.container .pay_button {
+    outline: none;
+    width: 210px;
+    margin: 0px;
+    border-radius: 15px;
+    height: fit-content;
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    transition: background-color .5s;
+    transition: color .5s;
+}
+
+.container .pay_button:hover {
+    background-color: yellow;
+    color: black;
+}

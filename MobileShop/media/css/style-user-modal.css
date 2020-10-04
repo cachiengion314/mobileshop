@@ -1,0 +1,328 @@
+/* modal user section  */
+
+.modal_user {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c4;
+    padding-top: 30px;
+}
+
+.modal_user .container_user {
+    width: 750px;
+    height: 600px;
+    margin: 5% auto 15% auto;
+    border-radius: 15px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.container_user h3 {
+    text-align: center;
+}
+
+.modal_user_block_catgory {
+    display: flex;
+}
+
+.modal_user_block_catgory .account {
+    width: 26%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_user_block_catgory .password {
+    width: 22%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_user_block_catgory .product_choices {
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_user_block_catgory .option {
+    width: 22%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_user_block {
+    display: flex;
+}
+
+.modal_user_block .user {
+    width: 26%;
+    height: 50px;
+    display: flex;
+}
+
+.modal_user_block .user img {
+    width: 50px;
+    height: 50px;
+}
+
+.modal_user_block .user .user_name {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: teal;
+}
+
+.modal_user_block .user_password {
+    width: 22%;
+    height: 50px;
+    text-align: center;
+}
+
+.modal_user_block .products_choices {
+    width: 30%;
+    height: 50px;
+    line-height: 17px;
+    color: teal;
+    text-align: center;
+}
+
+.modal_user_block .option_button {
+    width: 22%;
+    height: 50px;
+    position: relative;
+}
+
+.modal_user_block .option_button .history_button {
+    outline: none;
+    width: 45px;
+    height: 45px;
+    padding: 15px 3px;
+    margin: 0px;
+    border-radius: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    background-color: green;
+    color: white;
+    transition: background-color .5s;
+}
+
+.modal_user_block .option_button .history_button:hover {
+    background-color: black
+}
+
+.modal_user_block .option_button .delete_button {
+    outline: none;
+    width: 45px;
+    height: 45px;
+    padding: 15px 3px;
+    margin: 0px;
+    border-radius: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    background-color: crimson;
+    color: white;
+    transition: background-color .5s;
+}
+
+.modal_user_block .option_button .delete_button:hover {
+    background-color: black
+}
+
+.container_user button {
+    position: absolute;
+    top: 90%;
+    left: 31%;
+    width: 300px;
+    border-radius: 15px;
+    background-color: black;
+    transition: background-color .5s;
+}
+
+.container_user button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* modal order history section  */
+
+.modal_order_history {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c4;
+    padding-top: 30px;
+}
+
+.modal_order_history .container_order {
+    width: 750px;
+    height: 600px;
+    margin: 5% auto 15% auto;
+    border-radius: 15px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.container_order h3 {
+    text-align: center;
+}
+
+.modal_order_block_catgory {
+    display: flex;
+}
+
+.modal_order_block_catgory .id_number {
+    width: 2%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_order_block_catgory .account_name {
+    width: 15%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_order_block_catgory .address {
+    width: 15%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_order_block_catgory .pay_form {
+    width: 17%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_order_block_catgory .telephone {
+    width: 15%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_order_block_catgory .total_paid {
+    width: 10%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_order_block_catgory .product_choices {
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_order_block_catgory .order_date {
+    width: 6%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.modal_order_block_info {
+    display: flex;
+}
+
+.modal_order_block_info .id_number {
+    width: 2%;
+    height: fit-content;
+    text-align: center;
+    line-height: 18px;
+    color: teal;
+}
+
+.modal_order_block_info .account_name {
+    width: 15%;
+    height: fit-content;
+    text-align: center;
+    line-height: 18px;
+}
+
+.modal_order_block_info .address {
+    width: 15%;
+    height: fit-content;
+    text-align: center;
+    line-height: 18px;
+    color: teal;
+}
+
+.modal_order_block_info .pay_form {
+    width: 17%;
+    height: fit-content;
+    text-align: center;
+    line-height: 18px;
+}
+
+.modal_order_block_info .telephone {
+    width: 15%;
+    height: 30px;
+    text-align: center;
+    line-height: 18px;
+    color: teal;
+}
+
+.modal_order_block_info .total_paid {
+    width: 10%;
+    height: fit-content;
+    text-align: center;
+    line-height: 18px;
+}
+
+.modal_order_block_info .product_choices {
+    width: 20%;
+    height: fit-content;
+    text-align: center;
+    line-height: 18px;
+    color: teal;
+}
+
+.modal_order_block_info .order_date {
+    width: 6%;
+    height: fit-content;
+    text-align: center;
+    line-height: 18px;
+}
+
+.container_order button {
+    position: absolute;
+    top: 90%;
+    left: 31%;
+    width: 300px;
+    border-radius: 15px;
+    background-color: black;
+    transition: background-color .5s;
+}
+
+.container_order button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.font_size_15 {
+    font-size: 14px;
+}
