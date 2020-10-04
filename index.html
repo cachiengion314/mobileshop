@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mobile Shop Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./media/css/style.css">
+    <link rel="stylesheet" href="./media/css/style-footer.css">
+    <link rel="stylesheet" href="./media/css/style-side-navigation.css">
+    <link rel="stylesheet" href="./media/css/style-UiList.css">
+    <link rel="stylesheet" href="./media/css/style-sign-option.css">
+    <link rel="stylesheet" href="./media/css/style-navigation-bar.css">
+    <link rel="stylesheet" href="./media/css/style-add-cart-modal.css">
+    <link rel="stylesheet" href="./media/css/style-user-modal.css">
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div id="side_icon_img">
+            <img src="media/images/avatar_1.png" alt="">
+        </div>
+        <p id="side_user_name">User Default Name</p>
+        <button id="sign_out_btn">Đăng Xuất</button>
+        <button id="sign_in_btn" onclick="document.getElementById('id02').style.display='block'">Đăng Nhập</button>
+        <button id="sign_up_btn">Đăng Ký</button>
+        <button id="history_btn">Lịch sử</button>
+
+        <!-- modal sign in arena start -->
+        <div id="id02" class="modal">
+            <form class="modal-content">
+                <div class="container">
+                    <h1 id="sign_in_status_title">Sign In</h1>
+                    <hr>
+                    <label for="email"><b>Tên đăng nhập</b></label>
+                    <input id="sign_in_name_input" type="text" placeholder="Hãy ghi tên đăng nhập" name="email" required>
+
+                    <label for="psw"><b>Mật khẩu</b></label>
+                    <input id="sign_in_password_input" type="password" placeholder="Nhập mật khẩu" name="psw" required>
+                    <label>
+                        <input id="sign_in_remember_checkbox" type="checkbox" checked="checked" name="remember"
+                            style="margin-bottom:15px">
+                        Ghi nhớ đăng nhập
+                    </label>
+                    <div class="clearfix">
+                        <button type="button" class="cancel_button" onclick="document.getElementById(`id02`).style.display=`none`">Bỏ Qua</button>
+                        <button id="modal_sign_in_btn" type="button" class="sign_button">Đăng Nhập</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- modal sign up arena end -->
+        <!-- modal sign up arena start -->
+        <div id="id01" class="modal">
+            <form class="modal-content">
+                <div class="container">
+                    <h1 id="sign_up_status_title">Sign Up</h1>
+                    <hr>
+                    <label for="email"><b>Tên đăng nhập</b></label>
+                    <input id="sign_up_name_input" type="text" placeholder="Hãy ghi tên đăng nhập" name="email" required>
+
+                    <label for="psw"><b>Mật khẩu</b></label>
+                    <input id="sign_up_password_input" type="password" placeholder="Nhập mật khẩu" name="psw" required>
+
+                    <label for="psw-repeat"><b>Nhập mật khẩu lần 2</b></label>
+                    <input id="repeat_password_input" type="password" placeholder="Nhập mật khẩu lần 2" name="psw-repeat" required>
+
+                    <label>
+                        <input id="sign_up_remember_checkbox" type="checkbox" checked="checked" name="remember"
+                            style="margin-bottom:15px">
+                        Ghi nhớ đăng nhập
+                    </label>
+                    <div class="clearfix">
+                        <button type="button" class="cancel_button" onclick="document.getElementById(`id01`).style.display=`none`">Bỏ Qua</button>
+                        <button id="modal_sign_up_btn" type="button" class="sign_button">Đăng Ký</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- modal sign in arena end -->
+
+        <!-- modal user arena start -->
+        <div id="modal_user" class="modal_user">
+            <div id="modal_container_user" class="container_user">
+                <h3 id="modal_user_title">Toàn bộ user đã đăng ký</h3>
+                <div class="slice_bar"></div>
+                <div class="modal_user_block_catgory">
+                    <div class="account">Tên tài khoản</div>
+                    <div class="password">Password</div>
+                    <div class="product_choices">Đã lựa chọn sản phẩm</div>
+                    <div class="option">Tùy chọn</div>
+                </div>
+                <div id="modal_user_block_info">
+
+                </div>
+                <button id="modal_user_ok_button" onclick="document.getElementById(`modal_user`).style.display=`none`">OK</button>
+            </div>
+        </div>
+        <!-- modal user arena end -->
+
+        <!-- modal order history start -->
+        <div id="modal_order_history" class="modal_order_history">
+            <div id="modal_container_order" class="container_order">
+                <h3 id="modal_order_title">Lịch sử các đơn hàng gần nhất</h3>
+                <div class="slice_bar"></div>
+                <div class="modal_order_block_catgory">
+                    <div class="id_number">Id</div>
+                    <div class="account_name">Tên tài khoản</div>
+                    <div class="address">Địa chỉ</div>
+                    <div class="pay_form">Kiểu thanh toán</div>
+                    <div class="telephone">Telephone</div>
+                    <div class="total_paid">Tổng tiền</div>
+                    <div class="product_choices">Các sản phẩm</div>
+                    <div class="order_date">Date</div>
+                </div>
+                <div id="modal_order_block_root">
+
+                </div>
+                <button id="modal_order_ok_button" onclick="document.getElementById(`modal_order_history`).style.display=`none`">OK</button>
+            </div>
+        </div>
+        <!-- modal order history end -->
+    </div>
+
+    <!-- main start -->
+    <div id="main">
+        <!-- content start -->
+        <div class="content">
+            <!-- head layout start  -->
+            <div class="content_head">
+                <div class="content_title">
+                    <div class="open_sidebar">
+                        <button class="openbtn" onclick="openNav()">☰</button>
+                    </div>
+                    <h2 id="welcome_title">Chào mừng đến với Mobile Shop</h2>
+                    <div id="content_title_bag">
+                        <img src="media/images/cart.png" alt="">
+                        <span id="bag_red_dot" class="all_red_dot">0</span>
+                    </div>
+                    <!-- modal cart arena start -->
+                    <div id="cart" class="modal_cart">
+                        <div class="container">
+                            <h3 id="modal_cart_title">Giỏ hàng</h3>
+                            <div class="slice_bar"></div>
+                            <div class="modal_cart_block_catgory">
+                                <div class="products">Sản phẩm</div>
+                                <div class="price">Giá bán</div>
+                                <div class="numbers">Số lượng</div>
+                            </div>
+                            <div id="container_cart_items">
+
+                            </div>
+                            <div class="bottom_slice_bar"></div>
+                            <div id="sum_price_title" class="sum_price_title">Tổng Giá Trị</div>
+                            <div id="sum_price" class="sum_price">100.000.000 vnd</div>
+                            <button class="cart_cancel_button" onclick="document.getElementById(`cart`).style.display=`none`">Đóng</button>
+                            <button id="cart_pay_button" class="cart_pay_button">Hoá Đơn</button>
+                        </div>
+                    </div>
+                    <!-- modal cart arena end -->
+                    <!-- modal pay arena start -->
+                    <div id="pay" class="modal_pay">
+                        <div class="container">
+                            <h3 id="modal_pay_title">Thông tin đơn hàng của bạn Admin</h3>
+                            <div class="slice_bar"></div>
+                            <div class="modal_pay_block_catgory">
+                                <div class="chosen_products">Các sản phẩm đã chọn</div>
+                                <div class="pay_price">Tổng tiền phải thanh toán</div>
+                            </div>
+                            <div class="slice_bar"></div>
+                            <div class="space"></div>
+                            <div class="modal_pay_block_info">
+                                <div id="chosen_products_info" class="chosen_products_info">Galayxy s20 plus x 1, iphone 11 x 2 xiaomi x 3, samsung galaxy s3000 plus x 1</div>
+                                <div id="pay_price_info" class="pay_price_info">200.200.200 vnd</div>
+                            </div>
+                            <div class="space"></div>
+                            <div class="slice_bar"></div>
+                            <div class="pay_form_block">
+                                <div class="pay_form_address">Địa điểm giao hàng</div>
+                                <input id="address_input" class="pay_form_input" type="text" onfocus="this.value=``" value="Vd: Số 115 Nguyễn Lương Bằng, Đống Đa, Hà Nội">
+                                <div class="pay_phone_money_block">
+                                    <div class="phone_pair">
+                                        <div class="telephone_title">Số điện thoại liên hệ</div>
+                                        <input id="telephone_input" type="tel" onfocus="this.value=``" value="Vd: 097325603">
+                                    </div>
+                                    <div class="money_pair">
+                                        <div class="money_type_title">Hình thức chuyển tiền</div>
+                                        <form id="form1">
+                                            <select id="type_select">
+                                                <!-- <option value="" selected="selected">Select</option> -->
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom_slice_bar"></div>
+                            <button class="cart_cancel_button" onclick="document.getElementById(`pay`).style.display=`none`">Đóng</button>
+                            <button id="modal_pay_button" class="pay_button">Thanh Toán</button>
+                        </div>
+                    </div>
+                    <!-- modal pay arena end -->
+                </div>
+                <!-- banner  start -->
+                <div class="header_banner">
+                    <img class="img_slides animate-left" src="./media/images/TGDd-KhaiTruongHN-ver2-940-300.jpg" alt=""></img>
+                    <img class="img_slides animate-top" src="./media/images/tgdd-tragopoppo-800-300.jpg" alt=""></img>
+                    <img class="img_slides animate-right" src="./media/images/940-300.jpg" alt=""></img>
+
+                    <div id="left_direction" class="direction">&#10094;</div>
+                    <div id="right_direction" class="direction">&#10095;</div>
+                    <span id="indicate_dot_0" class="indicate_dot"></span>
+                    <span id="indicate_dot_1" class="indicate_dot"></span>
+                    <span id="indicate_dot_2" class="indicate_dot"></span>
+                </div>
+                <!-- banner  end -->
+                <!-- navigation bar start -->
+                <div class="navbar">
+                    <div class="subnav">
+                        <button class="subnavbtn">Tất cả</button>
+                    </div>
+                    <div class="subnav">
+                        <button class="subnavbtn">Apple</button>
+                    </div>
+                    <div class="subnav">
+                        <button class="subnavbtn">Samsung</button>
+                    </div>
+                    <div class="subnav">
+                        <button class="subnavbtn">Xiami</button>
+                    </div>
+                    <div class="search_container">
+                        <input id="search_input" class="navbar_search" type="text" placeholder="Tìm kiếm...">
+                        <button id="search_button" type="submit">
+                            <img src="./media/images/search_flat_icon.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <!-- navigation bar end -->
+            </div>
+            <!-- head layout end  -->
+
+            <!-- modal add to cart arena success start -->
+            <div id="add_to_cart_success" class="modal_add_success animate-bottom">
+                <div class="container">
+                    <h1 id="modal_add_success_title">Đã thêm thành công vào giỏ hàng</h1>
+                    <img id="modal_add_success_bagImg" src="./media/images/success.png" alt="">
+                    <button id="modal_ok_button" onclick="document.getElementById(`add_to_cart_success`).style.display=`none`">OK</button>
+                </div>
+            </div>
+            <!-- modal add to cart arena success end -->
+
+            <!-- all brand start  -->
+            <div id="root_brand_section" class="root_brand_section">
+            </div>
+            <!-- all brand end  -->
+
+            <!-- scroll to top button start -->
+            <button onclick="toTheTop()" id="to_the_top_button" title="Go to top">&#9650;</button>
+            <!-- scroll to top button end -->
+
+            <!-- Represent bottom textContent start -->
+            <div id="address">
+                <p>Cơ sở 1: Tầng 6, toà C, 22 Thành Công, Hà Nội</p>
+                <p>Cơ sở 1: Tầng 6, toà C, 22 Thành Công, Hà Nội</p>
+                <p>Cơ sở 1: Tầng 6, toà C, 22 Thành Công, Hà Nội</p>
+                <p>Kết Nối với Chúng Tôi</p>
+                <a href="">About Us</a>
+            </div>
+            <!-- Represent bottom textContent end -->
+        </div>
+        <!-- content end -->
+    </div>
+    <!-- main end -->
+    <!-- footer start  -->
+    <div class="footer"></div>
+    <!-- footer end  -->
+
+    <script src="./media/js/data.js"></script>
+    <script src="./media/js/index.js"></script>
+    <script src="./media/js/index-phone-list.js"></script>
+    <script src="./media/js/index-user-modal.js"></script>
+    <script>
+        window.onload = () => {
+            saveUsersDataForTheFirstTime();
+            checkUserSignStatus();
+            showCurrentUserRedDotBag();
+            showSlideBannerAt(0);
+            showSlideBannerAuto();
+            createAllSection();
+        }
+    </script>
+</body>
+
+</html>
