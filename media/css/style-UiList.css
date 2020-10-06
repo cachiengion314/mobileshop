@@ -14,6 +14,94 @@
 }
 
 
+/* more info  */
+
+.modal_more_info {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c4;
+    padding-top: 30px;
+}
+
+.modal_more_info .container {
+    width: 700px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 5% auto 15% auto;
+    border-radius: 15px;
+    padding: 16px;
+    position: relative;
+}
+
+.modal_more_info .container h3,
+.modal_more_info .container h2 {
+    color: rgb(124, 25, 0);
+    text-align: center;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+
+.flex_pair {
+    display: flex;
+}
+
+.padding10_0 {
+    padding: 8px 0px;
+}
+
+.info {
+    width: 50%;
+}
+
+.info_value {
+    width: 50%;
+    color: teal;
+}
+
+.info_block {
+    display: flex;
+    height: max-content;
+    width: 100%;
+}
+
+.info_image {
+    display: block;
+    width: 55%;
+}
+
+.info_image img {
+    width: 90%;
+}
+
+.info_text {
+    display: block;
+    width: 45%;
+}
+
+.modal_more_info .container .more_info_cancel_button {
+    outline: none;
+    width: 250px;
+    margin: 0px;
+    padding: 14px 20px;
+    border-radius: 15px;
+    height: fit-content;
+    position: absolute;
+    top: 90%;
+    left: 35%;
+    background-color: crimson;
+    transition: background-color .5s;
+}
+
+.modal_more_info .container .more_info_cancel_button:hover {
+    background-color: black;
+}
+
+
 /* ui list section */
 
 .home_product_items {
@@ -86,6 +174,14 @@
 .home_product_items li .home_product_items_detail {
     height: 7%;
     text-align: center;
+    outline: none;
+    cursor: pointer;
+    color: teal;
+    transition: color .5s;
+}
+
+.home_product_items li .home_product_items_detail:hover {
+    color: yellowgreen;
 }
 
 .home_product_items .home_product_items_feature {

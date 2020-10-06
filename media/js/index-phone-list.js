@@ -354,7 +354,7 @@ function createProductList(mobiles, UlHtmlElement) {
                         <button id="${mobiles[i].name}_add_to_cart_btn" class="add_to_cart_btn">Thêm vào giỏ hàng</button>
                     </div>
                     <div class="home_product_items_detail">
-                        <a href="">Chi tiết sản phẩm</a>
+                        <a id="${mobiles[i].name}_more_info">Chi tiết sản phẩm</a>
                     </div>
                     <!-- button and a link tag pair end -->
                 </div>
@@ -377,6 +377,11 @@ function createProductList(mobiles, UlHtmlElement) {
             document.getElementById(`${mobiles[i].name}_promotions_list`).insertAdjacentHTML(`beforeend`, `
             <li>${mobiles[i].promotions[ii]}</li>
             `);
+        }
+
+        document.getElementById(`${mobiles[i].name}_more_info`).onclick = () => {
+            // Specs info stuffs
+            createSpecsInfoOfProduct(mobiles[i])
         }
 
         document.getElementById(`${mobiles[i].name}_add_to_cart_btn`).addEventListener(`click`, () => {
@@ -412,4 +417,22 @@ function createProductList(mobiles, UlHtmlElement) {
             }
         });
     }
+}
+
+function createSpecsInfoOfProduct(productObj) {
+    document.getElementById(`more_info`).style.display = `block`;
+
+    document.getElementById(`modal_more_info_phone_name`).textContent = `Điện thoại ${productObj.name}`;
+    document.getElementById(`modal_more_info_phone_img_url`).src = productObj.imageUrl.replace(/"/g, ``);
+
+    document.getElementById(`screen_value`).textContent = productObj.specs.screen;
+    document.getElementById(`screen_type`).textContent = productObj.specs.screen_type;
+    document.getElementById(`os`).textContent = productObj.specs.os;
+    document.getElementById(`main_camera`).textContent = productObj.specs.main_camera;
+    document.getElementById(`front_camera`).textContent = productObj.specs.front_camera;
+    document.getElementById(`cpu`).textContent = productObj.specs.cpu;
+    document.getElementById(`ram`).textContent = productObj.specs.ram;
+    document.getElementById(`rom`).textContent = productObj.specs.rom;
+    document.getElementById(`battery`).textContent = productObj.specs.battery;
+    document.getElementById(`sim`).textContent = productObj.specs.sim;
 }
