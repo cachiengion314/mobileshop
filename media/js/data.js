@@ -419,7 +419,7 @@ let mobilesData = [{
         brand: `samsung`,
         price: `6.490.000 vnd`,
         price_number: 6490000,
-        promotions: [`Lên đời Samsung sành điệu, tài trợ đổi mới 500,000đ`, `Tặng suất mua Đồng hồ Samsung Active 2 giảm đến 35%, Watch 3 giảm 25% (không kèm KM khác).`, `Tặng 2 suất mua Đồng hồ thời trang giảm 40% (không áp dụng thêm khuyến mãi khác)`],
+        promotions: [`Lên đời Samsung sành điệu, tài trợ đổi mới 500,000đ`, `Tặng suất mua Đồng hồ Samsung Active 2 giảm đến 35%, Watch 3 giảm 25% (không kèm KM khác).`, `Tặng 2 suất mua Đồng hồ thời trang giảm 40%`],
         specs: {
             screen: 6.4,
             screen_type: `super amoled`,
@@ -440,7 +440,7 @@ let mobilesData = [{
         brand: `samsung`,
         price: `5.390.000 vnd`,
         price_number: 5390000,
-        promotions: [`Tặng suất mua Đồng hồ Samsung Active 2 giảm đến 35%, Watch 3 giảm 25% (không kèm KM khác).`, `Tặng 2 suất mua Đồng hồ thời trang giảm 40% (không áp dụng thêm khuyến mãi khác)`, `Phụ kiện mua kèm giảm 20% (không áp dụng đồng thời phụ kiện hãng, KM khác)`],
+        promotions: [`Tặng suất mua Đồng hồ Samsung Active 2 giảm đến 35%, Watch 3 giảm 25% (không kèm KM khác).`, `Tặng 2 suất mua Đồng hồ thời trang giảm 40% (không áp dụng thêm khuyến mãi khác)`, `Phụ kiện mua kèm giảm 20%`],
         specs: {
             screen: 6.5,
             screen_type: `super amoled`,

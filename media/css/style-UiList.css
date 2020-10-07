@@ -14,7 +14,7 @@
 }
 
 
-/* more info  */
+/* more info section  */
 
 .modal_more_info {
     display: none;
@@ -92,7 +92,7 @@
     height: fit-content;
     position: absolute;
     top: 90%;
-    left: 35%;
+    left: 34%;
     background-color: crimson;
     transition: background-color .5s;
 }
