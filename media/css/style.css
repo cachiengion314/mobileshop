@@ -135,8 +135,8 @@ body {
 
 @media screen and (max-width: 700px) {
     .header_banner .indicate_dot {
-        width: 15px;
-        height: 15px;
+        width: 9px;
+        height: 9px;
     }
 }
 
